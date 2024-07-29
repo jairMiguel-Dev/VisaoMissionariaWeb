@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            margin: 0;
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+        }
+        .register-container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .register-container h2 {
+            margin-bottom: 20px;
+            color: #b9936c;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .register-container input[type="text"],
+        .register-container input[type="password"],
+        .register-container input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #b9936c;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+        .register-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #b9936c;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .register-container button:hover {
+            background-color: #a77b50;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Registro</h2>
+        <form action="/register" method="post">
+            <input type="text" name="username" placeholder="Usuário" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
